@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 40px 16px;
+  font: 15px Arial, sans-serif;
+  color: #333;
+  background: #fff;
+}
+
+.todo-app {
+  max-width: 540px;
+  margin: auto;
+}
+
+h1 {
+  margin: 0 0 24px;
+  font-size: 26px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 7px;
+}
+
+.input-row, .filters {
+  display: flex;
+  gap: 8px;
+}
+
+input, button {
+  font: inherit;
+}
+
+input:not([type="checkbox"]) {
+  width: 100%;
+  min-width: 0;
+  padding: 9px 10px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+}
+
+button {
+  padding: 9px 12px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  background: #f4f4f4;
+  color: #333;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #e5e5e5;
+}
+
+.add-button {
+  background: #333;
+  color: white;
+}
+
+.add-button:hover {
+  background: #555;
+}
+
+.filters {
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.filters button[aria-pressed="true"] {
+  background: #ddd;
+  border-color: #777;
+  font-weight: bold;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 0;
+  padding: 13px 0;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.task input {
+  margin: 2px 0 0;
+  accent-color: #444;
+}
+
+.task span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.completed span {
+  text-decoration: line-through;
+  color: #777;
+}
+
+.empty-state {
+  margin-top: 28px;
+  color: #666;
+}
+
+.error {
+  color: #b42318;
+  margin: 8px 0 0;
+}
+
+:focus-visible {
+  outline: 2px solid #555;
+  outline-offset: 2px;
+}
